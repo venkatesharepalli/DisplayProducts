@@ -1,8 +1,24 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
+  <div id="app"> 
+
+  <nav class="top-bar" data-topbar="" role="navigation">
+    <a href="/html/">TESTPAKET</a>
+    <a href="/css/">WINDEL-ABO</a>
+    <a href="/js/">PRODUKTE</a>
+  </nav>
+    <section class="testpacket-header">
+        <img src="/bundles/lillydooweb/img/certificates/oekotex/oekotex_de.png?1559131231" alt="Oeko-Tex Certificate" class="oekotex-logo">
+        <div class="row text-center">
+            <div class="small-12 medium-6 end columns">
+                <h1>Entdecke unsere Hautfreundlichkeit</h1>
+                <div class="button-wrapper">
+                    <a href="/de/testpaket#trialbox" class="button">Jetzt Deine Größe wählen</a>
+                </div>
+            </div>
+        </div>
+    </section>
     <HelloWorld msg="Welcome to Your Vue.js App" />
-  </div>
+  </div>  
 </template>
 
 <script>
@@ -16,13 +32,6 @@ export default {
 };
 </script>
 
-<style lang="scss">
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style scoped>
+@import './assets/css/App.scss';
 </style>

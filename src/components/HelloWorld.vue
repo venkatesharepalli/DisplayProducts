@@ -1,89 +1,59 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <p>
-      For a guide and recipes on how to configure / customize this project,<br />
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener"
-        >vue-cli documentation</a
-      >.
-    </p>
-    <h3>Installed CLI Plugins</h3>
-    <ul>
-      <li>
-        <a
-          href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel"
-          target="_blank"
-          rel="noopener"
-          >babel</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint"
-          target="_blank"
-          rel="noopener"
-          >eslint</a
-        >
-      </li>
-    </ul>
-    <h3>Essential Links</h3>
-    <ul>
-      <li>
-        <a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a>
-      </li>
-      <li>
-        <a href="https://forum.vuejs.org" target="_blank" rel="noopener"
-          >Forum</a
-        >
-      </li>
-      <li>
-        <a href="https://chat.vuejs.org" target="_blank" rel="noopener"
-          >Community Chat</a
-        >
-      </li>
-      <li>
-        <a href="https://twitter.com/vuejs" target="_blank" rel="noopener"
-          >Twitter</a
-        >
-      </li>
-      <li>
-        <a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a>
-      </li>
-    </ul>
-    <h3>Ecosystem</h3>
-    <ul>
-      <li>
-        <a href="https://router.vuejs.org" target="_blank" rel="noopener"
-          >vue-router</a
-        >
-      </li>
-      <li>
-        <a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a>
-      </li>
-      <li>
-        <a
-          href="https://github.com/vuejs/vue-devtools#vue-devtools"
-          target="_blank"
-          rel="noopener"
-          >vue-devtools</a
-        >
-      </li>
-      <li>
-        <a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener"
-          >vue-loader</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://github.com/vuejs/awesome-vue"
-          target="_blank"
-          rel="noopener"
-          >awesome-vue</a
-        >
-      </li>
-    </ul>
-  </div>
+  <div>
+    <div id="wrapper">
+      <div id="left">
+       <div class="oekotex-wrapper">
+                  <div class="trialpack-slider flexslider">
+                    <ul class="slides">
+                        <li class="flex-active-slide" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 1; display: block; z-index: 2;">
+                            <img itemprop="image" src="../assets/images/lillydoo-testpaket-10.jpg" alt="Lillydoo Testpaket mit Windeln in Größe 1 und 15 Feuchttüchern" draggable="false">
+                        </li>
+                        <li style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;">
+                            <img itemprop="image" src="../assets/images/lillydoo-testpaket-20.jpg" alt="Lillydoo Testpaket mit Windeln in Größe 2 und 15 Feuchttüchern" draggable="false">
+                        </li>
+                        <li style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;">
+                            <img itemprop="image" src="../assets/images/lillydoo-testpaket-30.jpg" alt="Lillydoo Testpaket mit Windeln in Größe 3 und 15 Feuchttüchern" draggable="false">
+                        </li>
+                        <li style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;">
+                            <img itemprop="image" src="../assets/images/lillydoo-testpaket-40.jpg" alt="Lillydoo Testpaket mit Windeln in Größe 4 und 15 Feuchttüchern" draggable="false">
+                        </li>
+                        <li style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;">
+                            <img itemprop="image" src="../assets/images/lillydoo-testpaket-50.jpg" alt="Lillydoo Testpaket mit Windeln in Größe 5 und 15 Feuchttüchern" draggable="false">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+      </div>
+      <div id="right">
+       <div class="tb-button-container">
+                  <p>Wähle Deine Größe</p>
+                  <ul>
+                      <li data-size="10" data-prdctimg="../assets/images/diaperdesign_little_blowballs.jpg?1559131231" data-design="./assets/images/diapers_design_lilly_d_hover.png?1559131231" class="flex-active">
+                          <p>1</p>
+                          <span>(2-3 KG)</span>
+                      </li>
+                      <li data-size="20" data-prdctimg="../assets/images/diaperdesign_little_blowballs.jpg?1559131231" data-design="./assets/images/diapers_design_lilly_d_hover.png?1559131231">
+                          <p>2</p>
+                          <span>(3-4 KG)</span>
+                      </li>
+                      <li data-size="30" data-prdctimg="../assets/images/diaperdesign_little_blowballs.jpg?1559131231" data-design="./assets/images/diapers_design_lilly_d_hover.png?1559131231">
+                          <p>3</p>
+                          <span>(4-7 KG)</span>
+                      </li>
+                      <li data-size="40" data-prdctimg="../assets/images/diaperdesign_lilly_d.jpg?1559131231" data-design="./assets/images/diapers_design_little_blowballs_hover.png?1559131231">
+                          <p>4</p>
+                          <span>(7-10 KG)</span>
+                      </li>
+                      <li data-size="50" data-prdctimg="../assets/images/diaperdesign_the_new_baby_blue.jpg?1559131231" data-design="./assets/images/diapers_design_the_new_baby_blue.png?1559131231">
+                          <p>5</p>
+                          <span>(10-12 KG)</span>
+                      </li>
+                  </ul>
+              </div>
+
+      </div>
+    </div>
+ </div>
 </template>
 
 <script>
@@ -94,21 +64,6 @@ export default {
   }
 };
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+<style scoped>
+@import '../assets/css/HelloWorld.scss';
 </style>
