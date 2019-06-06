@@ -1,0 +1,220 @@
+
+#wrapper {
+  display: flex;
+}
+
+#left {
+  flex: 0 0 65%;
+}
+
+#right {
+  flex: 1;
+}
+
+.tb-button-container {
+  margin-bottom: 30px
+}
+
+.tb-button-container ul {
+  list-style: none;
+  margin: 0;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between
+}
+
+.tb-button-container li {
+  border: 1px solid #7c7c7c;
+  text-align: center;
+  width: 30%;
+  padding: 7px 5px 2px 5px;
+  color: #7c7c7c;
+  margin-right: 10px
+}
+
+.tb-button-container li:last-child {
+  margin-right: 0
+}
+
+.tb-button-container li.active,.tb-button-container li.selected {
+  background-color: #00afab;
+  border-color: #00afab;
+  color: #fff
+}
+
+.tb-button-container li p {
+  font-size: 1.3rem;
+  line-height: 1;
+  margin: 0
+}
+
+.tb-button-container li span {
+  line-height: 1;
+  font-size: .8rem
+}
+
+
+.tb-button-container li p {
+    font-size: 1.3rem;
+    line-height: 1;
+    margin: 0
+}
+
+.tb-button-container li span {
+    line-height: 1;
+    font-size: .8rem
+}
+
+.no-touch-device .tb-button-container li:hover {
+    background-color: #00afab;
+    border-color: #00afab;
+    color: #fff;
+    cursor: pointer
+}
+
+.trial-contains-wrapper h6 {
+    margin-bottom: 10px
+}
+
+.trial-steps {
+    list-style: none;
+    margin: 0
+}
+
+.trial-steps:after {
+    content: ".";
+    clear: both;
+    display: block;
+    visibility: hidden;
+    height: 0
+}
+
+section.bright {
+  background: #fff
+}
+
+.contentSlide ol.flex-control-thumbs li {
+  float: none;
+  display: inline
+}
+
+.addToCartTrialbox:after {
+  content: "";
+  clear: both;
+  display: block;
+  visibility: hidden;
+  height: 0
+}
+
+.addToCartTrialbox hr.product-form-hr {
+  margin-top: 0
+}
+
+.addToCartTrialbox a.button,.addToCartTrialbox button {
+  margin-top: 4px
+}
+
+.addToCartDiapers hr.product-form-hr,.addToCartTrialbox hr.product-form-hr,.addToCartWipes hr.product-form-hr {
+  width: 100%
+}
+
+ul.product-list {
+  line-height: 1.6rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1rem
+}
+
+.product-list {
+  font-size: 1rem;
+  line-height: 1.4
+}
+
+
+.product-list {
+  font-size: 1rem;
+  line-height: 1.4;
+  list-style-position: outside;
+  margin-left: 1.1rem;
+  margin-bottom: 2rem
+}
+.trialbox-button {
+  padding-left: 0;
+  padding-right: 0;
+  display: inline-block;
+  
+  background-color: transparent;
+    border: 1px solid #979797;
+    text-transform: capitalize;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px
+}
+
+.primary-color, li a {
+  color: #00afab
+}
+
+.contentSlide ol.flex-control-thumbs li img.active {
+  border: 1px solid #00afab;
+  border-radius: 8px
+}
+.row.collapse>.column,.row.collapse>.columns {
+  padding-left: 0;
+  padding-right: 0
+}
+
+.column,.columns {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  width: 100%;
+  float: left
+}
+.column+.column:last-child,.column+.columns:last-child,.columns+.column:last-child,.columns+.columns:last-child {
+  float: right
+}
+
+.column+.column.end,.column+.columns.end,.columns+.column.end,.columns+.columns.end {
+  float: left
+}
+
+.oekotex-wrapper {
+  position: relative
+}
+
+.oekotex-wrapper .oekotex-logo {
+  position: absolute;
+  z-index: 10
+}
+
+#trialbox .oekotex-wrapper .oekotex-logo {
+  top: 10%;
+  left: 9%;
+  z-index: 10;
+  width: 27%
+}
+
+@media (max-width: 599px) {
+  #trialbox .oekotex-wrapper .oekotex-logo {
+      width:34%;
+      left: 6%
+  }
+}
+
+#trialbox .oekotex-wrapper .zero-bubble {
+  top: 0;
+  right: 2%;
+  z-index: 10;
+  width: 30%;
+  position: absolute
+}
+
+@media only screen and (min-width: 52.1em) {
+  #trialbox .oekotex-wrapper .zero-bubble {
+      right:6%;
+      width: 22%
+  }
+}

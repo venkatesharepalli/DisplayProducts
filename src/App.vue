@@ -1,33 +1,32 @@
 <template>
   <div id="app"> 
-
-  <nav class="top-bar" data-topbar="" role="navigation">
-    <a href="/html/">TESTPAKET</a>
-    <a href="/css/">WINDEL-ABO</a>
-    <a href="/js/">PRODUKTE</a>
-  </nav>
-    <section class="testpacket-header">
-        <img src="/bundles/lillydooweb/img/certificates/oekotex/oekotex_de.png?1559131231" alt="Oeko-Tex Certificate" class="oekotex-logo">
-        <div class="row text-center">
-            <div class="small-12 medium-6 end columns">
-                <h1>Entdecke unsere Hautfreundlichkeit</h1>
-                <div class="button-wrapper">
-                    <a href="/de/testpaket#trialbox" class="button">Jetzt Deine Größe wählen</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <MainNavigation />
+   
   </div>  
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import MainNavigation from "./components/MainNavigation.vue";
+//import TestpaketHeader from "./components/TestpaketHeader.vue";
+//import TestpaketContent from "./components/TestpaketContent.vue";
 
 export default {
   name: "app",
   components: {
-    HelloWorld
+    MainNavigation,
+   // TestpaketHeader,
+   // TestpaketContent
+  },
+  data() {
+    return {
+      testPaketInfo: [
+        {size: 1, weight: "2-3", testpaket: 10},
+        {size: 2, weight: "3-4", testpaket: 20},
+        {size: 3, weight: "4-7", testpaket: 30},
+        {size: 4, weight: "7-10", testpaket: 40},
+        {size: 5, weight: "10-12", testpaket: 50}       
+      ]
+    }   
   }
 };
 </script>
